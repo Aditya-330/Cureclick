@@ -12,20 +12,26 @@ For Doctors
 ✅ Appointment Management – Doctors can see a list of their scheduled appointments.
 
 ## 🛠 Installation Guide
+
 1️⃣ Clone the Repository
+
 git clone <repository-url>
 cd CureClick
 2️⃣ Create a Virtual Environment (Optional, Recommended)
+
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 3️⃣ Install Required Dependencies
+
 pip install -r requirements.txt
 4️⃣ Set Up the Database
 
 flask db init
 flask db migrate -m "Initial migration"
 flask db upgrade
+
 5️⃣ Run the Flask Application
+
 py app.py
 The application will be available at http://127.0.0.1:5000/.
 
