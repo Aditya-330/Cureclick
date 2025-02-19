@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} CureClick - Whyus{% endblock %}</title>
+    <link rel="stylesheet" href="../static/css/why.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="/static/images/logo3.png" type="image/png">
+</head>
+
+<body>
+    {% extends 'base.html' %}
+    
+    {% block content %}
+    <div class="container1 scroll-reveal">
+        <div class="grid">
+            <!-- Experts Section -->
+            <div class="experts">
+                <img src="/static/images/expert.png" alt=""
+                style="width: 109%; height: 119%; margin-top: -4.2%; margin-left: -4.2%; border-radius: 20px;">
+            </div>
+
+            <!-- Why Us Section -->
+            <div class="why-us">
+                <h1 style="font-weight: 1000;">Why Us?</h1>
+            </div>
+
+            <!-- Convenient App Card -->
+            <div class="card card-mint convenient-app">
+                <img src="/static/images/index1.png"
+                    alt="Convenient App">
+            </div>
+
+            <!-- Success Rate Card -->
+            <div class="card card-mint success-rate">
+                <h3>98%</h3>
+                <p>Approval for our Experts</p>
+            </div>
+
+            <!-- Comprehensive Consultation Card -->
+            <div class="card card-coral consultation">
+                <h3 style="font-weight: 1000; margin-top: -4%">Comprehensive Consultation</h3>
+                <div class="icon-group">
+                    <div class="icon">
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-stethoscope i1"></i>
+                        </div>
+                    </div>
+                    <p class="p1">MBBS and BDS Qualified Doctors</p>
+                    <div class="icon">
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-circle-plus i2"></i>
+                        </div>
+                    </div>
+                    <p class="p2">Seamless Care, One <i class="fa-solid fa-plus"></i> at a time</p>
+                    <div class="icon">
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-handshake i3"></i>
+                        </div>
+                    </div>
+                    <p class="p3">Exclusive Partnerships with Major Organizations</p>
+                </div>
+            </div>
+
+            <!-- Platform Features Card -->
+            <div class="card card-mint platform-features">
+                <p style="font-weight: 600;">Driving Innovation Forward</p>
+                <h3>Our Platform's<br>Features Lead the Way</h3>
+                <h4 style="font-size: 15px; margin-top: 3%;">🔹 <strong>One-Click Booking</strong>: Just <i>Click</i>,
+                    for <i>Cure</i> – fast, easy, and hassle-free!</h4>
+                <h4 style="font-size: 15px; margin-top: 3%">🔹 API & Chatbot Assistance: <u><strong>Coming Soon</strong></i></u> - smarter, faster,
+                    and more <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interactive healthcare support!</h4>
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="chat-content">
+                        <p>Hi, Mike</p>
+                        <div class="chat-bubble">
+                            How can I help you today?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container scroll-reveal">
+        <header class="header">
+            <h1 class="title" style="font-weight: 1000;">Explore Specialities:<br>Discover Your Path to a Healthy Life</h1>
+            <p class="subtitle">From Consultations to Appointments,<br>We're Here to Keep You Healthy</p>
+        </header>
+
+        <div class="cards">
+            <div class="card1 card-green">
+                <div class="heart-icon">♡</div>
+                <div>
+                    <span class="service-label">Our Service</span>
+                    <div class="description" style="color: #5e1b1b;"><i
+                            class="fa-solid fa-stethoscope stethoscope-icon"></i>Doctor-Friendly
+                        Dashboard: Easy Appointment Management</div>
+                    <p class="subtitle-text">
+                    <ul class="kite-list">
+                        <li>Effortless Scheduling: Doctors can view and manage appointments easily.</li>
+                        <li>Seamless Accessibility: Works on any device, with absolutely secure login.</li>
+                        <li>Secure & Private: Flask-Werkzeug compliant protection for patient records.</li>
+                    </ul>
+                    </p>
+                </div>
+                <a href="{{url_for('doctor_login')}}" style="text-decoration: none; color: #333">
+                    <div class="price">Sign in as a Doctor, now!</span></div>
+                </a>
+            </div>
+
+            <div class="card2 card-pink">
+                <div class="heart-icon">♡</div>
+                <div>
+                    <span class="service-label">Our Service</span>
+                    <div class="description" style="color: #5e1b1b;"><i
+                            class="fa-solid fa-calendar-alt calendar-icon"></i>
+                        Instant Appointment Booking: Hassle-Free
+                        Patient Experience</div>
+                    <p class="subtitle-text">
+                    <ul class="kite-list">
+                        <li>One-Click Booking: Patients can schedule appointments instantly with their preferred
+                            doctors.</li>
+                        <li>Smart Availability: Real-time doctor availability to choose the best time slot.</li>
+                        <li>24/7 Accessibility: No wait for clinic hours — book from anywhere, anytime.</li>
+                    </ul>
+                    </p>
+                </div>
+                <a href="{{url_for('book_appointment')}}" style="text-decoration: none; color: #333; margin-top: 1%">
+                    <div class="price">Book your appointments now!</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header3 scroll-reveal">
+        <h1 class="h1" style="font-weight: 1000;">Explore Our Case Studies</h1>
+    </header>
+
+    <div class="featured-case scroll-reveal">
+        <h2 style="margin-bottom: 30px; margin-top: -2.5%;">Revolutionizing Healthcare: Just Click, for Cure! </h2>
+        <p style="margin-bottom: 35px; margin-top: -2%">Follow the journey of CureClick Healthcare Ltd. , a pioneering
+            startup dedicated to revolutionizing the healthcare industry.</p>
+        <img src="/static/images/head.png" alt="Healthcare Innovation Case Study"
+        style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.10);">
+        
+        <div class="case-meta">
+            <span class="meta-icon">
+                <i class="fa-regular fa-clock"></i>
+                3k
+            </span>
+            <span class="meta-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span class="meta-icon">
+                <i class="fa-regular fa-heart"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="carousel-container23 scroll-reveal">
+        <button class="nav-btn prev">←</button>
+        <button class="nav-btn next">→</button>
+        <div class="carousel">
+            <div class="case-card" style="background-color: rgb(227, 224, 224);">
+                <h3 style="font-size: larger;">From Dorm Room to Boardroom</h3>
+                <p style="font-size: 16.5px; color: #221e36">This students-led healthcare website evolved from
+                    a dorm room idea to a successful enterprise,
+                    transforming patient care & experience with innovation</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #ff7676, #f54ea2);">
+                <h3 style="font-size: larger;">The Journey of Eco-Friendly Startup Solutions</h3>
+                <p style="font-size: 16.5px; color: #221e36">Exploring how green startups are reducing medical waste,
+                    implementing sustainable packaging, and
+                    adopting energy-efficient hospital practices.</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #7ed56f, #28b485);">
+                <h3 style="font-size: larger;">The Impact of Enterprise Ventures</h3>
+                <p style="font-size: 16.5px; color: #221e36">How large enterprises like Fortis, drive
+                    groundbreaking healthcare advancements, enhancing efficiency,
+                    accessibility, and patient outcomes through technology.</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #eaebae, #d08ec6);">
+                <h3 style="font-size: larger;">Telemedicine Transformation: Encouraging Rural Healthcare</h3>
+                <p style="font-size: 16.5px; color: #221e36">How our telemedicine expands healthcare access in remote
+                    areas,
+                    cutting patient travel time and improving treatment adherence.</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                <h3 style="font-size: larger;">Personalized Health Dashboards</h3>
+                <p style="font-size: 16.5px; color: #221e36">How interactive dashboards provide patients with insights
+                    into their health metrics, enabling
+                    proactive management of chronic conditions and their booked appointments.</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                <h3 style="font-size: larger;">Flask for Medical Data Security: A Game Changer</h3>
+                <p style="font-size: 16.5px; color: #221e36">How Flask-based web applications enhance healthcare data
+                    security, ensuring encrypted patient records
+                    and seamless access control for providers.</p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #ff7e5f, #feb47b);">
+                <h3 style="font-size: larger;">Patient-Centered Care: The Impact of Empathy in Treatment</h3>
+                <p style="font-size: 16.5px; color: #221e36">How hospitals and clinics improve patient outcomes by
+                    prioritizing compassionate care, active
+                    listening, and emotional support.
+                </p>
+            </div>
+            <div class="case-card" style="background: linear-gradient(135deg, #d4cbc4, #a8c0ff);">
+                <h3 style="font-size: larger;">Empowering Patients with CureClick: A New Era of Healthcare Accessibility
+                </h3>
+                <p style="font-size: 16.5px; color: #221e36">How CureClick makes healthcare accessible through
+                    intuitive interfaces, easy appointment
+                    booking, doctor availability.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description scroll-reveal">
+        <p>"Experience seamless healthcare scheduling with our easy-to-use platform. Book your appointment now and take
+            the first step toward better health—schedule your visit today!"</p>
+        <a href="#" class="explore-link">
+            Book your Appointment right now
+            <i class="fa-solid fa-arrow-right" style="margin-top: 0%; margin-left: 0%;"></i>
+        </a>
+    </div>
+    {% endblock %}
+
+</body>
+
+<script src="../static/js/whyus.js">
+</script>
+
+</html>
+
+

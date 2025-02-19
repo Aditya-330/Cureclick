@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}About Us - CureClick{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/about.css">
+    <link rel="icon" href="/static/images/logo3.png" type="image/png">
+    
+   
+</head>
+<body class="bg-white">
+
+    {% extends 'base.html' %}
+
+    {% block content%}
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transforming Healthcare Access</h1>
+                    <p class="hero-description">Connecting patients with quality healthcare through innovative technology and compassionate service since 2025.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">1K+</div>
+                            <div class="stat-label">Patients Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">2000+</div>
+                            <div class="stat-label">Healthcare Providers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Patient Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-content">
+                        <h2>Our Story</h2>
+                        <p class="story-text">Founded in 2025, <strong>CureClick</strong> emerged from a simple yet powerful vision: to make quality healthcare accessible to everyone. Our journey began during the global pandemic when we recognized the critical need for a streamlined, digital approach to medical appointments.</p>
+                        <p class="story-text">Today, we have gyown into a comprehensive healthcare platform that connects thousands of patients with qualified healthcare providers daily. Our commitment to innovation and patient care continues to drive our mission forward.</p>
+                        <div class="mission-box">
+                            <h3>Our Mission</h3>
+                            <p class="mission-text">To revolutionize healthcare access by providing a seamless, patient-centered platform that connects individuals with quality medical care.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://public.readdy.ai/ai/img_res/4ca47f6befe45fc885dcba9d0be6381d.jpg" alt="Our Story" class="story-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ri-24-hours-line"></i>
+                        </div>
+                        <h3 class="service-title">24/7 Support</h3>
+                        <p class="service-description">Round-the-clock assistance for all your healthcare needs, ensuring you are never alone in your healthcare journey.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <h3 class="service-title">Verified Doctors</h3>
+                        <p class="service-description">All healthcare providers on our platform are thoroughly vetted and certified, ensuring the highest quality of care.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ri-calendar-check-line"></i>
+                        </div>
+                        <h3 class="service-title">Easy Booking</h3>
+                        <p class="service-description">Simple and intuitive appointment booking system that puts you in control of your healthcare schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leadership-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Leadership</h2>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <img src="https://public.readdy.ai/ai/img_res/69393efa0187b0536ab3a93b9a796f13.jpg" alt="Dr. James Wilson" class="leader-image">
+                        <h3 class="leader-name">Dr. Rohit Verma</h3>
+                        <p class="leader-title">Chief Executive Officer</p>
+                        <p class="leader-bio">Former Chief of Medicine at Stanford Medical Center with 20+ years of healthcare leadership experience.</p>
+                    </div>
+                    <div class="leader-card">
+                        <img src="https://public.readdy.ai/ai/img_res/410fa4c9d634566a352511fe967a2e03.jpg" alt="Dr. Sarah Chen" class="leader-image">
+                        <h3 class="leader-name">Dr. Emily Chen</h3>
+                        <p class="leader-title">Chief Medical Officer</p>
+                        <p class="leader-bio">Harvard-trained physician with expertise in digital health transformation and patient care innovation.</p>
+                    </div>
+                    <div class="leader-card">
+                        <img src="https://public.readdy.ai/ai/img_res/0e6b8b86934462d5e183aff9c9b92c36.jpg" alt="Michael Roberts" class="leader-image">
+                        <h3 class="leader-name">Mohit Jain</h3>
+                        <p class="leader-title">Chief Technology Officer</p>
+                        <p class="leader-bio">Former Google engineer with extensive experience in healthcare technology and data security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="container">
+                <h2 class="section-title">Our Partners</h2>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <img src="../static/images/john.png" alt="Partner 1" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="../static/images/Pfizer.jpg" alt="Partner 2" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="../static/images/cvs.png" alt="Partner 3" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="../static/images/medtronic.webp" alt="Partner 4" class="partner-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Start Your Healthcare Journey Today</h2>
+                    <p class="cta-description">Join thousands of satisfied patients who have transformed their healthcare experience with CureClick.</p>
+                    <div class="cta-buttons">
+                        <a href="{{url_for('book_appointment')}}"><button class="cta-button">Book Appointment</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+{% endblock %}
+
+</body>
+<script src="/static/js/about.js">
+    </script>
+</html>
